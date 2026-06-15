@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Goût de la Mer</title>
+    <link rel="stylesheet" href="menu.css">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff; /* Light blue */
+    color: #2f4f4f; /* Dark green */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e88e5; 
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:#1e88e5; 
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #1e88e5a4;
+}
+.nav-logo {
+    display: flex; 
+    align-items: center; 
+    overflow-x: hidden;
+}
+
+.nav-logo img {
+    max-height: 200px; 
+    width: 200px; 
+    overflow-x: hidden;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.menu-section {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #005f73;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2e8b57;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.menu-item h4 {
+    font-size: 1.2em;
+    color: #1e90ff; 
+}
+
+.menu-item p {
+    font-size: 1em;
+    color: #2f4f4f;
+}
+img{
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+/*footer*/
+.custom-footer {
+  background-color: #1e88e5; 
+  color: #f0f0f0;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f0f0f0; 
+  
+  
+}
+
+.footer-links p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  color: #f0f0f0; 
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+.social-links img{
+    height: 30px;
+    width: 30px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #2196F3; 
+}
+
+.social-links a:hover {
+  color: #1e88e5; 
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-logo h1 {
+    font-size: 1.5rem;
+    
+  }
+}
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="/projet/img/logo-removebg (2).png" alt="Goût de la Mer Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="/projet/index1 (2).html">Home</a></li>
+                <li><a href="menu (2).html">Menu</a></li>
+                <li><a href="about-us (2).html">About</a></li>
+                <li><a href="contact (2).html">Contact</a></li>
+                <li><a href="reservation (2).html">reservation de table</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </nav>
+    </header>
+    <section class="menu-section">
+        <h3>Plats Principaux</h3>
+        <div class="menu-item">
+            <img src="/projet/img/tagin-poisson (2).jpg" alt="Tagine de Poisson">
+            <div>
+                <h4>Tagine de Poisson</h4>
+                <p>75 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/Pastilla-Poisson (2).png" alt="Pastilla de Poisson">
+            <div>
+                <h4>Pastilla de Poisson</h4>
+                <p>80 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/Crevettes-Pil-Pil (2).png" alt="Crevettes Pil-Pil">
+            <div>
+                <h4>Crevettes Pil-Pil</h4>
+                <p>81 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/dorade-grille (2).png" alt="Dorade Grillé">
+            <div>
+                <h4>Dorade Grillé</h4>
+                <p>90 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/Paella-de-Fruits-de-Mer (2).png" alt="Paella de Fruits de Mer">
+            <div>
+                <h4>Paella de Fruits de Mer</h4>
+                <p>120 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/Filet-de-Merlan (2).png" alt="Filet de Merlan">
+            <div>
+                <h4>Filet de Merlan</h4>
+                <p>70 MAD</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h3>Salades</h3>
+        <div class="menu-item">
+            <img src="/projet/img/Salade-Marocaine (2).png" alt="Salade Marocaine">
+            <div>
+                <h4>Salade Marocaine</h4>
+                <p>32 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/zaalouk.jpg.webp" alt="Zaalouk">
+            <div>
+                <h4>Zaalouk</h4>
+                <p>20 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/Salade-de-Carottes-Marinées (2).png" alt="Salade de Carottes Marinées">
+            <div>
+                <h4>Salade de Carottes Marinées</h4>
+                <p>25 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/salad-d'orange-t-betterave (2).png" alt="Salade d’Orange et Betterave">
+            <div>
+                <h4>Salade d’Orange et Betterave</h4>
+                <p>35MAD</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h3>Boissons</h3>
+        <div class="menu-item">
+            <img src="/projet/img/jus-d'orange (2).png" alt="Jus d'Orange Frais">
+            <div>
+                <h4>Jus d'Orange Frais</h4>
+                <p>18 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/Jus-de-Citron-avec-Menthe (2).png" alt="Jus de Citron avec Menthe">
+            <div>
+                <h4>Jus de Citron avec Menthe</h4>
+                <p>19 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/the-a-la-menthe (2).png" alt="Thé à la Menthe">
+            <div>
+                <h4>Thé à la Menthe</h4>
+                <p>10 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/Jus-de-Pastèque (2).png" alt="Jus de Pastèque">
+            <div>
+                <h4>Jus de Pastèque</h4>
+                <p>17 MAD</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/projet/img/Smoothie-Tropical (2).png" alt="Smoothie Tropical">
+            <div>
+                <h4>Smoothie Tropical</h4>
+                <p>24 MAD</p>
+            </div>
+        </div>
+    </section>
+    <footer class="custom-footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <h1>Gout de la Mer</h1>
+          </div>
+          <div class="footer-links">
+            <p>© 2024 Gout de la Mer. All rights reserved.</p>
+            <p><a href="oumniaselmane8@gmail.com">oumniaselmane8@gmail.com</a></p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><img src="/projet/img/facebook (2).png" alt="Facebook"></a>
+              <a href="#" aria-label="Instagram"><img src="/projet/img/instagram (2).png" alt="Instagram"></a>
+              <a href="#" aria-label="Twitter"><img src="/projet/img/twitter (2).png" alt="Twitter"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

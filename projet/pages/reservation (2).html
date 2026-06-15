@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Goût de la Mer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; 
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e88e5; 
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:#1e88e5; 
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #1e88e5a4;
+}
+.nav-logo {
+    display: flex; 
+    align-items: center; 
+    overflow-x: hidden;
+}
+
+.nav-logo img {
+    max-height: 200px; 
+    width: 200px; 
+    overflow-x: hidden;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+        .container {
+            display: flex;
+            max-width: 1200px;
+            background-color: #f0f8ff; 
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .reservation-info, .reservation-form {
+            padding: 20px;
+            width: 50%;
+        }
+        .reservation-info {
+            background-color: #e0f2f1;
+            color: #004d40;
+        }
+        h2 {
+            color: #005f73;
+            text-align: center;
+        }
+        .reservation-info h3 {
+            color: #00796b;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .info-icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+            color: #00796b;
+        }
+        .reservation-form input, .reservation-form select, .reservation-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .reservation-form button {
+            background-color: #005f73;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .reservation-form button:hover {
+            background-color: #00796b;
+        }
+        
+        /*footer*/
+.custom-footer {
+  background-color: #1e88e5; 
+  color: #f0f0f0;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f0f0f0; 
+  
+  
+}
+
+.footer-links p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  color: #f0f0f0; 
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+.social-links img{
+    height: 30px;
+    width: 30px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #2196F3; 
+}
+
+.social-links a:hover {
+  color: #1e88e5; 
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-logo h1 {
+    font-size: 1.5rem;
+    
+  }
+}
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="/projet/img/logo-removebg (2).png" alt="Goût de la Mer Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/projet/index1 (2).html">Home</a></li>
+            <li><a href="menu (2).html">Menu</a></li>
+            <li><a href="about-us (2).html">About</a></li>
+            <li><a href="contact (2).html">Contact</a></li>
+            <li><a href="reservation (2).html">reservation de table</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="reservation-info">
+        <h2>Conditions de Réservation</h2>
+        <p>Veuillez vous assurer que vous avez fait la réservation avant votre visite.</p>
+        <div class="info-item">
+            <div class="info-icon">📅</div>
+            <div>
+                <h3>Annulation de Réservation</h3>
+                <p>Les annulations doivent être faites au moins 24 heures à l'avance. Veuillez nous appeler pour annuler votre réservation.</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+                <h3>Finalisation de Réservation</h3>
+                <p>Toutes les réservations doivent être finalisées avec le restaurant au plus tard 12 heures avant la date de réservation.</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="info-icon">💸</div>
+            <div>
+                <h3>Dépense Minimum</h3>
+                <p>Il n'y a pas de dépense minimum requise pour une réservation.</p>
+            </div>
+        </div>
+    </div>
+    <div class="reservation-form">
+        <h2>Réservez une Table</h2>
+        <form>
+            <label for="name">Nom*</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Numéro de Téléphone*</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email"required>
+
+            <label for="restaurant">Restaurant</label>
+            <select id="restaurant" name="restaurant">
+                <option value="1">Lieu Principal</option>
+                <option value="2">Lieu Bord de Mer</option>
+            </select>
+
+            <label for="datetime">Date et Heure*</label>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+
+            <label for="guests">Nombre de Personnes</label>
+            <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="4">5</option>
+                <option value="4">6</option>
+            </select>
+
+            <button type="submit">Réserver</button>
+        </form>
+    </div>
+</div>
+<footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h1>Gout de la Mer</h1>
+      </div>
+      <div class="footer-links">
+        <p>© 2024 Gout de la Mer. All rights reserved.</p>
+        <p><a href="oumniaselmane8@gmail.com">oumniaselmane8@gmail.com</a></p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><img src="/projet/img/facebook (2).png" alt="Facebook"></a>
+          <a href="#" aria-label="Instagram"><img src="/projet/img/instagram (2).png" alt="Instagram"></a>
+          <a href="#" aria-label="Twitter"><img src="/projet/img/twitter (2).png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

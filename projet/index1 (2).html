@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goût de la Mer - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+header {
+    background: url(img/img2.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    min-height: 100vh; 
+    overflow-x: hidden;
+    color: white;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e88e5; 
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:#1e88e5; 
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #1e88e5a4;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.welcome-section {
+    height: calc(100vh - 80px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+}
+
+.welcome-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #333;
+}
+
+.welcome-text p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: #333;
+}
+/*section style*/
+.advantages-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.advantages-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.advantage {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.advantage img {
+    width: 80px; 
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.advantage h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.advantage p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+/*populare dishes section*/
+.popular-dishes-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f8fa;
+}
+
+.popular-dishes-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.dish-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    max-width: 250px;
+}
+
+.dish-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.dish-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.dish-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+/*section menu*/
+.menu-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.menu-image img {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.menu-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+    padding: 15px;
+    text-align: left;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.price {
+    float: right;
+    color: #6eb9f9; 
+    font-weight: bold;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.download-btn {
+    background-color: #1257b9; 
+    color: white;
+}
+
+.full-menu-btn {
+    background-color: #40a0ff; 
+    color: white;
+}
+
+.menu-buttons button:hover {
+    opacity: 0.9;
+}
+.nav-logo {
+    display: flex; 
+    align-items: center; 
+    overflow-x: hidden;
+}
+
+.nav-logo img {
+    max-height: 200px; 
+    width: 200px; 
+    overflow-x: hidden;
+}
+/*footer*/
+.custom-footer {
+  background-color: #1e88e5; 
+  color: #f0f0f0;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f0f0f0; 
+  
+  
+}
+
+.footer-links p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  color: #f0f0f0; 
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+.social-links img{
+    height: 30px;
+    width: 30px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #2196F3; 
+}
+
+.social-links a:hover {
+  color: #1e88e5; 
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-logo h1 {
+    font-size: 1.5rem;
+    
+  }
+}
+    </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="img/logo-removebg.png" alt="Goût de la Mer Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="pages/menu (2).html">Menu</a></li>
+            <li><a href="pages/about-us (2).html">About</a></li>
+            <li><a href="pages/contact (2).html">Contact</a></li>
+            <li><a href="pages/reservation (2).html">reservation de table</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </nav>
+    <section class="welcome-section">
+        <div class="welcome-text">
+            <h1>Bienvenue à Gout de la Mer </h1>
+            <p>où les saveurs les plus fraîches des poissons rencontrent une art culinaire inoubliable!</p>
+        </div>
+    </section>
+   </header>
+      <section class="advantages-section">
+    <h2>À quoi s'attendre - Avantages de dîner avec nous</h2>
+    <p class="intro-text">Vous cherchez un endroit idéal pour dîner ? Réservez une table chez Goût de la Mer !</p>
+    
+    <div class="advantages">
+        <div class="advantage">
+            <img src="img/icon.png" alt="Qualité exceptionnelle de la nourriture">
+            <h3>Qualité exceptionnelle de la nourriture</h3>
+            <p>Nous sommes fiers d’offrir à nos clients la plus haute qualité d’ingrédients provenant des marchés.</p>
+        </div>
+        
+        <div class="advantage">
+            <img src="img/icon2.png" alt="Sélection de menus variés">
+            <h3>Sélection de menus variés</h3>
+            <p>Notre menu propose une large sélection de plats pour tous les goûts et toutes les préférences. Nous avons quelque chose pour tout le monde.</p>
+        </div>
+        
+        <div class="advantage">
+            <img src="img/icon3.png" alt="Un service irréprochable">
+            <h3>Un service irréprochable</h3>
+            <p>Notre personnel est formé pour fournir un service attentif et personnalisé à chaque client, garantissant ainsi une expérience culinaire mémorable.</p>
+        </div>
+    </div>
+</section>
+<section class="popular-dishes-section">
+    <h2>Plats Populaires</h2>
+    <p class="section-description">Découvrez nos plats les plus appréciés, préparés avec des ingrédients frais et de qualité.</p>
+    
+    <div class="dishes-grid">
+        <div class="dish-item">
+            <img src="img/Crevettes-Pil-Pil.png" alt="Dish 1">
+            <h3>Crevettes-Pil-Pil</h3>
+            <p>Saumon frais grillé, servi avec des légumes de saison et une sauce citronnée.</p>
+        </div>
+        
+        <div class="dish-item">
+            <img src="img/Paella-de-Fruits-de-Mer.png" alt="Dish 2">
+            <h3>Paella de Fruits de Mer</h3>
+            <p>Poulet rôti avec une marinade d'herbes, accompagné de pommes de terre rôties.</p>
+        </div>
+        
+        <div class="dish-item">
+            <img src="img/salad-d'orange-t-betterave.png" alt="Dish 3">
+            <h3>salad d'orange betterave</h3>
+            <p>Pâtes crémeuses Alfredo avec du fromage parmesan et une touche de persil.</p>
+        </div>
+        
+        <div class="dish-item">
+            <img src="img/Pastilla-Poisson.png" alt="Dish 4">
+            <h3>Pastilla de Poisson</h3>
+            <p>Burger gourmet avec du boeuf Angus, fromage cheddar, et garnitures fraîches.</p>
+        </div>
+    </div>
+</section>
+<section class="menu-section">
+    <h2>MENU</h2>
+    <div class="menu-image">
+        <img src="img/plat2.jpeg" alt="Delicious food spread">
+    </div>
+    
+    <div class="menu-items">
+        <div class="menu-item">
+            <h3>Tagine de Poisson <span class="price">75 MAD</span></h3>
+            <p>Un ragoût de poisson marocain mijoté avec des tomates, des poivrons, des olives et des épices parfumées, traditionnellement préparé dans un plat en terre cuite..</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pastilla de Poisson<span class="price">80 MAD</span></h3>
+            <p>Une pâte délicate farcie de poisson épicé, de vermicelles et d'amandes, enveloppée dans des couches de pâte filo et souvent saupoudrée de sucre glace et de cannelle..</p>
+        </div>
+        <div class="menu-item">
+            <h3>Crevettes Pil-Pil <span class="price">81 MAD</span></h3>
+            <p> Crevettes pétillantes dans une sauce à l'ail épicée, parfumée au paprika, au chili et à l'huile d'olive, servies en entrée ou plat principal.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Salade Marocaine <span class="price">32 MAD</span></h3>
+            <p>Un mélange rafraîchissant de tomates, concombres, oignons et herbes, assaisonné d'huile d'olive et de jus de citron pour une salade simple mais savoureuse.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Jus de Pastèque <span class="price">17 MAD</span></h3>
+            <p> Jus de pastèque fraîchement mélangé, une boisson hydratante et naturellement sucrée, idéale pour les journées chaudes..</p>
+        </div>
+        <div class="menu-item">
+            <h3>Salade de Carottes Marinées<span class="price">25 MAD</span></h3>
+            <p>Salade de carottes marinées avec du cumin, de l'ail et du persil, offrant un goût relevé et légèrement acide typique des mezzés marocains.</p>
+        </div>
+    </div>
+    
+    <div class="menu-buttons">
+        <button class="download-btn">Download PDF</button>
+        <button class="full-menu-btn"><a href="menu.html">Open Full Menu</a></button>
+    </div>
+</section>
+<footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h1>Gout de la Mer</h1>
+      </div>
+      <div class="footer-links">
+        <p>© 2024 Gout de la Mer. All rights reserved.</p>
+        <p><a href="oumniaselmane8@gmail.com">oumniaselmane8@gmail.com</a></p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+          <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+          <a href="#" aria-label="Twitter"><img src="img/twitter.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+</body>
+</html>

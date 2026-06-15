@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Goût de la Mer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Réinitialisation générale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e88e5; 
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:#1e88e5; 
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #1e88e5a4;
+}
+.nav-logo {
+    display: flex; 
+    align-items: center; 
+    overflow-x: hidden;
+}
+
+.nav-logo img {
+    max-height: 200px; 
+    width: 200px; 
+    overflow-x: hidden;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Section À propos */
+.about-us {
+    color:#005f73;
+    padding: 50px 0;
+}
+
+.about-us .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about-us ul {
+    list-style-type: none;
+}
+
+.about-us ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/*footer*/
+.custom-footer {
+  background-color: #1e88e5; 
+  color: #f0f0f0;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f0f0f0; 
+  
+  
+}
+
+.footer-links p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  color: #f0f0f0; 
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+.social-links img{
+    height: 30px;
+    width: 30px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #2196F3; 
+}
+
+.social-links a:hover {
+  color: #1e88e5; 
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-logo h1 {
+    font-size: 1.5rem;
+    
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="/projet/img/logo-removebg (2).png" alt="Goût de la Mer Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="/projet/index1 (2).html">Home</a></li>
+                <li><a href="menu (2).html">Menu</a></li>
+                <li><a href="about-us (2).html">About</a></li>
+                <li><a href="contact (2).html">Contact</a></li>
+                <li><a href="reservation (2).html">reservation de table</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-us">
+        <div class="container">
+            <h1>À propos de nous</h1>
+            <p>Bienvenue chez Goût de la Mer, où la passion pour les poissons rencontre l'excellence culinaire. Notre mission est de vous offrir les produits de la mer les plus frais et de la plus haute qualité.</p>
+            <p>Notre équipe est dédiée à vous offrir une expérience unique grâce à notre sélection de poissons soigneusement choisie. Nous nous engageons à la durabilité et à la qualité, en nous assurant que chaque prise respecte nos normes élevées.</p>
+            <h2>Nos Valeurs</h2>
+            <ul>
+                <li>Qualité : Nous privilégions les meilleurs poissons pour nos clients.</li>
+                <li>Durabilité : Nous croyons en des pratiques de pêche responsables.</li>
+                <li>Passion : Notre amour pour les produits de la mer est au cœur de tout ce que nous faisons.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="custom-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h1>Gout de la Mer</h1>
+        </div>
+        <div class="footer-links">
+          <p>© 2024 Gout de la Mer. All rights reserved.</p>
+          <p><a href="oumniaselmane8@gmail.com">oumniaselmane8@gmail.com</a></p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><img src="/projet/img/facebook (2).png" alt="Facebook"></a>
+            <a href="#" aria-label="Instagram"><img src="/projet/img/instagram (2).png" alt="Instagram"></a>
+            <a href="#" aria-label="Twitter"><img src="/projet/img/twitter (2).png" alt="Twitter"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
